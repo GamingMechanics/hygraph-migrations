@@ -23,7 +23,7 @@ Migrations come in 2 flavours: "up" and "down", which are used to migrate your s
 Migrations can be created manually, or via the cli with a hygen migration generator. To create a migration manually, create a new file in the `migrations` folder, and export a `IMigration`, e.g:
 
 ```ts
-import { IMigration } from "../types";
+import { IMigration } from "..";
 
 export const createPage: IMigration = {
   name: "01-create-page",
@@ -54,7 +54,9 @@ export const createPage: IMigration = {
     return client;
   },
   down: async (client: Client) => {
-    client.deleteModel("Page");
+    client.deleteModel({
+      apiId: "Page",
+    });
 
     return client;
   },
