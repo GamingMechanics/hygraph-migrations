@@ -1,0 +1,17 @@
+{
+  "name": "hygraph-migrations",
+  "version": "0.0.1",
+  "description": "A package for facilitating schema migrations with hygraph",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tom.doyle@gamingmechanics.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@hygraph/management-sdk": "^1.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.5"
+  }
+}
